@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ddd;
+            background-image: url('');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="image">Hover over an image below to display here.</div>
+
+<img src="img1.jpg" alt="Image 1" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+<img src="img2.jpg" alt="Image 2" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+<img src="img3.jpg" alt="Image 3" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+
+<script src="script.js"></script>
+</body>
+</html>
